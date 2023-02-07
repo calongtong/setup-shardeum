@@ -2,7 +2,7 @@
 echo `date +%d/%m/%Y\ %H:%M:%S`;
 echo -e "\nCheck service started or not "
 query21=$(/usr/local/bin/pm2 list | grep "operator-gui") 
-if [[ -z $query21 ]]; then 
+if [[ -n $query21 ]]; then 
     echo -e "\nOperator GUI not start --> Starting Operator GUI ... ";	   
     /usr/local/bin/node /usr/local/bin/operator-cli gui start;
     sleep 1
@@ -19,7 +19,7 @@ if [[ -n $query22 ]]; then
 fi
 
 query31=$(/usr/local/bin/pm2 list | grep "validator") 
-if [[ -z $query31 ]]; then 
+if [[ -n $query31 ]]; then 
     echo -e "\nValidator not start --> Starting Validator ... ";	   
     /usr/local/bin/node /usr/local/bin/operator-cli start;
     sleep 2
