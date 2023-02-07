@@ -17,6 +17,9 @@ if [[ -n $query22 ]]; then
     /usr/local/bin/node /usr/local/bin/operator-cli gui start
     sleep 1
     echo -e "\nValidator started"
+else
+    echo -e "\nGUI still running"
+    echo -e $query22
 fi
 
 query31=$(/usr/local/bin/pm2 list | grep validator)
@@ -34,4 +37,7 @@ if [[ -n $query32 ]]; then
     /usr/local/bin/node /usr/local/bin/operator-cli start;
     sleep 2
     echo -e "\nValidator started!"
+else
+    echo -e "\nValidator still running"
+    echo -e $query32
 fi
