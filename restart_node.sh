@@ -19,7 +19,7 @@ if [[ -n $query22 ]]; then
 fi
 
 query31=$(/usr/local/bin/pm2 list | grep "validator") 
-if [[ -n $query31 ]]; then 
+if [[ -z $query31 ]]; then 
     echo -e "\nValidator not start --> Starting Validator ... ";	   
     operator-cli  start;
     sleep 2
