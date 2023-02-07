@@ -19,6 +19,12 @@ operator-cli status
 
 ### For those of you whose node stops and who wants to set up an hourly cron job to check and restart the validator:
 
+** All in one script **
+
+```wget -O install-check-node.sh https://raw.githubusercontent.com/calongtong/setup-shardeum/main/install-check-node.sh && chmod +x install-check-node.sh && ./install-check-node.sh```
+
+OR 
+
 **1. Type this in you server terminal:**
 ```
 cd ~/.shardeum
