@@ -1,4 +1,5 @@
 #!/bin/bash
+PATH=$PATH:/usr/local/bin
 echo `date +%d/%m/%Y\ %H:%M:%S`;
 echo -e "\nCheck service started or not "
 query22=$(/usr/local/bin/pm2 list | grep operator-gui | grep stopped) 
