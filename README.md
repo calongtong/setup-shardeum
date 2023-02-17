@@ -16,7 +16,7 @@ operator-cli gui status
 operator-cli status
 ```
 
-** OR **
+### OR 
 ```
 docker exec shardeum-dashboard operator-cli gui start
 docker exec shardeum-dashboard operator-cli start
