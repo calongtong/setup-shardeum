@@ -16,6 +16,14 @@ operator-cli gui status
 operator-cli status
 ```
 
+** OR **
+```
+docker exec shardeum-dashboard operator-cli gui start
+docker exec shardeum-dashboard operator-cli start
+docker exec shardeum-dashboard operator-cli gui status
+docker exec shardeum-dashboard operator-cli status
+```
+
 
 ### For those of you whose node stops and who wants to set up an hourly cron job to check and restart the validator:
 
